@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./main.css" />
+		<script src="./app.js" defer></script>
+		<title>Todo App</title>
+	</head>
+	<body>
+		<main class="todo-app">
+			<form class="task-form" aria-label="Create new task">
+				<label for="task-input" class="visually-hidden">Task description</label>
+				<input
+					type="text"
+					id="task-input"
+					title="Write a new task"
+					class="task-form__input"
+					placeholder="Add a new task"
+					aria-label="Task description"
+					required
+				/>
+				<button
+					class="task-form__submit"
+					type="submit"
+					aria-label="Create task"
+					title="Create task"
+				>
+					<svg class="task-form__icon" viewBox="0 0 22 22" aria-hidden="true">
+						<path
+							fill="currentColor"
+							d="M19.25 11a.75.75 0 0 1-.75.75h-6.625v6.625a.75.75 0 0 1-1.5 0v-6.625H3.75a.75.75 0 0 1 0-1.5h6.625V3.75a.75.75 0 0 1 1.5 0v6.625h6.625a.75.75 0 0 1 .75.75z"
+						/>
+					</svg>
+				</button>
+			</form>
+		</main>
+	</body>
+</html>
