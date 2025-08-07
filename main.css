@@ -248,8 +248,9 @@ button:focus-visible {
 	row-gap: 60px;
 
 	max-width: 432px;
+	padding-inline: 10px;
 	margin-inline: auto;
-  margin-top: 160px;
+	margin-top: 160px;
 }
 
 .task-form {
@@ -265,6 +266,11 @@ button:focus-visible {
 
 	border: 1px solid var(--color-input-border);
 	border-radius: var(--border-radius);
+	outline: 1px solid transparent;
+}
+
+.task-form__input:focus-visible {
+	border: none;
 }
 
 .task-form__input::placeholder {
@@ -274,11 +280,18 @@ button:focus-visible {
 
 .task-form__submit {
 	color: var(--color-light);
-	background: var(--color-accent);
+	background-color: var(--color-accent);
 
 	padding: 9px;
 	border-radius: var(--border-radius);
 	border: none;
+
+	transition-duration: var(--transition-duration);
+}
+
+.task-form__submit:hover {
+	color: var(--color-light);
+	background-color: var(--color-input-border);
 }
 
 .task-form__icon {
